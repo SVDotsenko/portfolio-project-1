@@ -5,7 +5,6 @@ body {
   font-size: 18px;
   font-style: normal;
   line-height: 160%;
-  color: #333333;
 }
 
 a {
@@ -19,22 +18,22 @@ a {
   background-size: cover;
   background-position: top center;
   position: relative;
-  /*z-index: -2;*/
 }
 
-.header__color {
+.header:before {
+  content: "";
   position: absolute;
   min-height: 100vh;
   width: 100%;
   background-color: #2352DE;
   opacity: 0.5;
-  /*z-index: -1;*/
 }
 
 .container {
   max-width: 1190px;
   padding: 0 10px;
   margin: 0 auto;
+  position: relative;
 }
 
 .header__top-inner {
@@ -48,9 +47,12 @@ a {
   border: 3px solid blue;
 }
 
+.logo__img:active {
+  opacity: 0.5;
+}
+
 .logo__img:hover {
-  /*fill: red;*/
-  background-color: black;
+  opacity: 0.7;
 }
 
 .menu__list {
@@ -83,7 +85,7 @@ a {
 .header__content-inner {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 150px);
+  min-height: calc(100vh - 200px);
   justify-content: space-between;
 }
 
@@ -92,11 +94,9 @@ a {
   font-size: 90px;
   font-weight: 700;
   line-height: 130%;
-  color: rgba(255, 255, 255, 1);
+  color: #fff;
   margin-bottom: auto;
   width: 100px;
-  /*opacity: 1;*/
-  z-index: 30;
 }
 
 .header__subtitle {
@@ -108,14 +108,24 @@ a {
   margin-bottom: 40px;
 }
 
-.header__icon-block, .header__icon-img {
+.header__icon {
+  position: relative;
   margin: 0 auto;
-}
-
-.header__icon-description {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 130%;
   color: #fff;
+}
+
+.header__icon:after {
+  content: "";
+  width: 45px;
+  height: 27px;
+  background-image: url("../images/arrow-down.svg");
+  background-size: cover;
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
 }
