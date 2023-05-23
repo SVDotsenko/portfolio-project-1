@@ -11,6 +11,25 @@ a {
   text-decoration: none;
 }
 
+.title {
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 15px;
+  background: #2352DE;
+  opacity: 0.1;
+  bottom: 0;
+  left: 0;
+}
+
 .header {
   min-height: 100vh;
   background-image: url('../images/header-bg.jpg');
@@ -20,7 +39,7 @@ a {
   position: relative;
 }
 
-.header:before {
+.header::before {
   content: "";
   position: absolute;
   min-height: 100vh;
@@ -118,7 +137,7 @@ a {
   color: #fff;
 }
 
-.header__icon:after {
+.header__icon::after {
   content: "";
   width: 45px;
   height: 27px;
@@ -128,4 +147,15 @@ a {
   bottom: -35px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.about {
+  padding: 140px 0;
+}
+
+.about__content p {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: 400;
 }
