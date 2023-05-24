@@ -159,3 +159,56 @@ a {
   line-height: 160%;
   font-weight: 400;
 }
+
+.expertise {
+  padding: 140px 0;
+  background-color: #F6F6F8;
+
+}
+
+.expertise__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expertise__info {
+  width: 100%;
+  margin-left: 90px;
+}
+
+.expertise__info-item {
+  display: flex;
+}
+
+.expertise__info-item:nth-child(2) {
+  margin: 86px 0;
+}
+
+.expertise__info-item-skill {
+  text-transform: uppercase;
+  width: 64px;
+}
+
+.expertise__info-item-skill-full {
+  flex-grow: 1;
+  height: 32px;
+  background-color: #DBDBED;
+}
+
+.expertise__info-item-skill-rate {
+  background-color: #2352DE;
+  height: 32px;
+}
+
+.html-rate-width {
+  width: 85%;
+}
+
+.css-rate-width {
+  width: 80%;
+}
+
+.js-rate-width {
+  width: 60%;
+}
