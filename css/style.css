@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #fff;
+  --title-color: #333;
+  --blue-color: #2352DE;
+}
+
 body {
   min-height: 100vh;
   font-family: "Open Sans", sans-serif;
@@ -5,6 +11,7 @@ body {
   font-size: 18px;
   font-style: normal;
   line-height: 160%;
+  color: var(--primary-color);
 }
 
 a {
@@ -17,6 +24,7 @@ a {
   font-size: 48px;
   line-height: 130%;
   position: relative;
+  color: var(--title-color);
 }
 
 .title::after {
@@ -24,7 +32,7 @@ a {
   position: absolute;
   width: 230px;
   height: 15px;
-  background: #2352DE;
+  background: var(--blue-color);
   opacity: 0.1;
   bottom: 0;
   left: 0;
@@ -44,7 +52,7 @@ a {
   position: absolute;
   min-height: 100vh;
   width: 100%;
-  background-color: #2352DE;
+  background-color: var(--blue-color);
   opacity: 0.5;
 }
 
@@ -85,16 +93,16 @@ a {
 .menu__list-link {
   font-size: 18px;
   line-height: 130%;
-  color: #fff;
+  color: var(--primary-color);
   font-weight: 600;
 }
 
 .menu__list-link:hover {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .menu__list-link:focus {
-  border: 1px solid #fff;
+  border: 1px solid var(--primary-color);
 }
 
 .menu__list-link:active {
@@ -113,7 +121,7 @@ a {
   font-size: 90px;
   font-weight: 700;
   line-height: 130%;
-  color: #fff;
+  color: var(--primary-color);
   margin-bottom: auto;
   width: 100px;
 }
@@ -122,7 +130,7 @@ a {
   font-size: 48px;
   font-weight: 400;
   line-height: 130%;
-  color: #fff;
+  color: var(--primary-color);
   margin-top: auto;
   margin-bottom: 40px;
 }
@@ -134,7 +142,7 @@ a {
   font-weight: 600;
   font-size: 18px;
   line-height: 130%;
-  color: #fff;
+  color: var(--primary-color);
 }
 
 .header__icon::after {
@@ -158,6 +166,7 @@ a {
   font-size: 18px;
   line-height: 160%;
   font-weight: 400;
+  color: var(--title-color);
 }
 
 .expertise {
@@ -188,6 +197,7 @@ a {
 .expertise__info-item-skill {
   text-transform: uppercase;
   width: 64px;
+  color: var(--title-color);
 }
 
 .expertise__info-item-skill-full {
@@ -197,7 +207,7 @@ a {
 }
 
 .expertise__info-item-skill-rate {
-  background-color: #2352DE;
+  background-color: var(--blue-color);
   height: 32px;
 }
 
@@ -211,4 +221,56 @@ a {
 
 .js-rate-width {
   width: 60%;
+}
+
+.services {
+  margin-top: 140px;
+}
+
+.services__items {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__item {
+  width: 330px;
+  position: relative;
+}
+
+.services__item::before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+}
+
+.services__item--code::before {
+  background-image: url("../images/code.svg");
+}
+
+.services__item--cms::before {
+  background-image: url("../images/cms.svg");
+}
+
+.services__item--support::before {
+  background-image: url("../images/support.svg");
+}
+
+.services__item-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  color: var(--title-color);
+  margin-bottom: 25px;
+}
+
+.services__item-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--title-color);
 }
