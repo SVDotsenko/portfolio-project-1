@@ -9,6 +9,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -47,11 +50,11 @@
       <div class="header__content-inner">
         <h1 class="header__title">
           Вітаю, я Сергій Сірко
+          <h4 class="header__subtitle">
+            frontend-розробник
+          </h4>
         </h1>
-        <h4 class="header__subtitle">
-          frontend-розробник
-        </h4>
-        <a class="header__text" href="#">
+        <a class="header__text animation" href="#">
           дивитися роботи
         </a>
       </div>
@@ -85,31 +88,31 @@
       </div>
     </section>
 
-    <section class="expertise section bisque">
+    <section class="expertise section bg-color">
       <div class="container">
         <h2 class="title"> Навички </h2>
         <div class="expertise__inner">
           <img class="expertise__picture" alt="розробник Сергій Сірко" src="images/developer.jpg">
-          <div class="expertise__info">
-            <div class="expertise__item">
+          <ul class="expertise__info">
+            <li class="expertise__item">
               <div class="expertise__skill">html</div>
               <div class="expertise__blank">
                 <div class="expertise__full" style="width: 85%"></div>
               </div>
-            </div>
-            <div class="expertise__item">
+            </li>
+            <li class="expertise__item">
               <div class="expertise__skill">css</div>
               <div class="expertise__blank">
                 <div class="expertise__full" style="width: 80%"></div>
               </div>
-            </div>
-            <div class="expertise__item">
+            </li>
+            <li class="expertise__item">
               <div class="expertise__skill">js</div>
               <div class="expertise__blank">
                 <div class="expertise__full" style="width: 60%"></div>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -117,8 +120,8 @@
     <section class="services section">
       <div class="container">
         <h2 class="title">Послуги</h2>
-        <div class="services__items">
-          <div class="services__item services__item--code">
+        <ul class="services__items">
+          <li class="services__item services__item--code">
             <h3 class="services__subtitle">
               Верстка проєктів
             </h3>
@@ -126,88 +129,118 @@
               Зроблю якісну верстку вашого проєкта за наявним макетом або прикладами робіт, які вам
               подобаються
             </p>
-          </div>
-          <div class="services__item services__item--cms">
+          </li>
+          <li class="services__item services__item--cms">
             <h3 class="services__subtitle">
               Посадка на CMS
             </h3>
             <p class="services__text">
               Інтегрую ваш проєкт з однією з популярних CMS
             </p>
-          </div>
-          <div class="services__item services__item--support">
+          </li>
+          <li class="services__item services__item--support">
             <h3 class="services__subtitle">
               Підтримка сайта
             </h3>
             <p class="services__text">
               Гарантую підтримку вашого сайта протягом 30 днів післе здачі проєкта
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section class="portfolio section">
+    <section class="portfolio">
       <div class="container">
-        <div class="header-center">
-          <h2 class="title">Мої роботи</h2>
-          <div class="portfolio__buttons">
-            <button class="portfolio__button" data-filter="all">Усі роботи</button>
-            <button class="portfolio__button" data-filter=".category-a">Лендінги</button>
-            <button class="portfolio__button" data-filter=".category-b">Корпоративні</button>
-            <button class="portfolio__button" data-filter=".category-c">E-commerce</button>
-          </div>
-        </div>
-        <div class="portfolio__content">
-          <div class="portfolio__item mix category-a">
-            <img src="images/portfolio/1.jpg" alt="приклад першої роботи">
-          </div>
-          <div class="portfolio__item mix category-a">
-            <img src="images/portfolio/2.jpg" alt="приклад другої роботи">
-          </div>
-          <div class="portfolio__item mix category-b">
-            <img src="images/portfolio/3.jpg" alt="приклад третьої роботи">
-          </div>
-          <div class="portfolio__item mix category-b">
-            <img src="images/portfolio/4.jpg" alt="приклад четвертої роботи">
-          </div>
-          <div class="portfolio__item mix category-c">
-            <img src="images/portfolio/5.jpg" alt="приклад п'ятої роботи">
-          </div>
-          <div class="portfolio__item mix category-c">
-            <img src="images/portfolio/6.jpg" alt="приклад шостої роботи">
-          </div>
-        </div>
-        <a class="portfolio_add" href="#">Завантажити ще</a>
+        <h2 class="title">Мої роботи</h2>
+        <ul class="portfolio__buttons">
+          <li class="portfolio__li">
+            <button class="portfolio__button" data-filter="all" type="button">Усі роботи</button>
+          </li>
+          <li class="portfolio__li">
+            <button class="portfolio__button" data-filter=".category-a" type="button">Лендінги</button>
+          </li>
+          <li class="portfolio__li">
+            <button class="portfolio__button" data-filter=".category-b" type="button">Корпоративні</button>
+          </li>
+          <li class="portfolio__li">
+            <button class="portfolio__button" data-filter=".category-c" type="button">E-commerce</button>
+          </li>
+        </ul>
+        <ul class="portfolio__content">
+          <li class="portfolio__item mix category-a">
+            <img src="images/portfolio/1.jpg" alt="проект море">
+          </li>
+          <li class="portfolio__item mix category-a">
+            <img src="images/portfolio/2.jpg" alt="проект кораблі">
+          </li>
+          <li class="portfolio__item mix category-b">
+            <img src="images/portfolio/3.jpg" alt="проект мост">
+          </li>
+          <li class="portfolio__item mix category-b">
+            <img src="images/portfolio/4.jpg" alt="проект місто">
+          </li>
+          <li class="portfolio__item mix category-c">
+            <img src="images/portfolio/5.jpg" alt="проект річка">
+          </li>
+          <li class="portfolio__item mix category-c">
+            <img src="images/portfolio/6.jpg" alt="проект скала">
+          </li>
+        </ul>
+        <button class="btn-primary" type="button">Завантажити ще</button>
       </div>
     </section>
-    <!--конец воторого дз-->
-    <section class="feedback section bisque">
+
+    <section class="feedback section bg-color">
       <div class="container">
         <div class="header-center">
           <h2 class="title"> Відгуки клієнтів </h2>
         </div>
         <div class="feedback__content">
-          <div class="feedback__content__customer">
-            <div class="feedback__content__customer__img">
+          <div class="feedback__customer">
+            <div class="feedback__img">
               <img src="images/customer.svg" alt="потенційний клієнт">
             </div>
-            <h4 class="feedback__content__customer__name">
+            <h4 class="feedback__name">
               Марк Цукерберг
             </h4>
-            <p class="feedback__content__customer__text">
+            <p class="feedback__text">
               Фантастично! Я цілком задоволений роботою цього спеціаліста. Швидко і якісно. Рекомендую!
             </p>
           </div>
-          <div class="feedback__content__video">
+          <div class="feedback__video">
             <img src="images/video-bg.jpg" alt="відео">
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container statistics">
+        <div class="statistics__square statistics__square--works bg-color">
+          <p class="statistics__text">Виконаних робіт</p>
+          <h4 class="statistics__number">56</h4>
+        </div>
+        <div class="statistics__square statistics__square--clients bg-color">
+          <p class="statistics__text">Задоволених клієнтів</p>
+          <h4 class="statistics__number">23</h4>
+        </div>
+        <div class="statistics__square statistics__square--drinks bg-color">
+          <p class="statistics__text">Випито горнят кави</p>
+          <h4 class="statistics__number">477</h4>
+        </div>
+        <div class="statistics__square statistics__square--reviews bg-color">
+          <p class="statistics__text">Усього відгуків</p>
+          <h4 class="statistics__number">48</h4>
         </div>
       </div>
     </section>
   </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+          integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/mixitup.min.js"></script>
   <script src="js/script.js"></script>
 </body>
