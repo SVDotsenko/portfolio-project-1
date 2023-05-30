@@ -452,6 +452,48 @@ body {
 .feedback__video {
   width: 570px;
   height: 400px;
+  position: relative;
+  z-index: 1;
+}
+
+.feedback__video::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.feedback__video:hover::after {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.feedback__video:active::after {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 3px rgba(35, 82, 222, 0.5);
+}
+
+.feedback__video::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 90px solid #fff;
+  transition: transform 0.9s;
+}
+
+.feedback__video:hover::before {
+  transform: translate(-50%, -50%) rotate(90deg) scale(1.5);
+}
+
+.feedback__video:active::before {
+  transform: translate(-50%, -50%) rotate(90deg) scale(0.6);
 }
 
 .statistics {
