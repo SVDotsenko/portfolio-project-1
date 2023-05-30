@@ -198,15 +198,14 @@
         </div>
         <div class="feedback__content">
           <div class="feedback__customer">
-            <div class="feedback__img">
-              <img src="images/customer.svg" alt="потенційний клієнт">
-            </div>
             <h4 class="feedback__name">
               Марк Цукерберг
             </h4>
-            <p class="feedback__text">
-              Фантастично! Я цілком задоволений роботою цього спеціаліста. Швидко і якісно. Рекомендую!
-            </p>
+            <blockquote class="feedback__blockquote">
+              <p>
+                Фантастично! Я цілком задоволений роботою цього спеціаліста. Швидко і якісно. Рекомендую!
+              </p>
+            </blockquote>
           </div>
           <div class="feedback__video">
             <img src="images/video-bg.jpg" alt="відео">
@@ -216,26 +215,59 @@
     </section>
 
     <section class="section">
-      <div class="container statistics">
-        <div class="statistics__square statistics__square--works bg-color">
+      <ul class="container statistics">
+        <li class="statistics__square statistics__square--works bg-color">
           <p class="statistics__text">Виконаних робіт</p>
           <h4 class="statistics__number">56</h4>
-        </div>
-        <div class="statistics__square statistics__square--clients bg-color">
+        </li>
+        <li class="statistics__square statistics__square--clients bg-color">
           <p class="statistics__text">Задоволених клієнтів</p>
           <h4 class="statistics__number">23</h4>
-        </div>
-        <div class="statistics__square statistics__square--drinks bg-color">
+        </li>
+        <li class="statistics__square statistics__square--drinks bg-color">
           <p class="statistics__text">Випито горнят кави</p>
           <h4 class="statistics__number">477</h4>
-        </div>
-        <div class="statistics__square statistics__square--reviews bg-color">
+        </li>
+        <li class="statistics__square statistics__square--reviews bg-color">
           <p class="statistics__text">Усього відгуків</p>
           <h4 class="statistics__number">48</h4>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contacts">
+      <div class="container">
+        <h2 class="title">
+          Контакти
+        </h2>
+        <div class="contacts__data">
+          <div class="contacts__info">
+            <p>
+              Вийти зі мною на зв’язок можна, скориставшись контактною формою, або напряму за номером телефона, email, у
+              соцмережах:
+            </p>
+            <a href="tel:+380501111111">+38 (050) 111 11 11</a>
+            <a href="mailto:frontend-monster@email.com">frontend-monster@email.com</a>
+          </div>
+          <form action="" class="form">
+            <label>Ваше ім’я</label>
+            <input type="text" placeholder="Іван">
+            <label>Номер телефона</label>
+            <input type="text" placeholder="+380501111111">
+            <label>Ваше повідомлення</label>
+            <textarea placeholder="Текст вашого повідомлення"></textarea>
+            <button class="btn-primary" type="submit">Надіслати</button>
+          </form>
         </div>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <a class="logo" href="#">
+      <img src="images/logo.svg" alt="логотип">
+    </a>
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
