@@ -10,8 +10,8 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
-        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -21,7 +21,7 @@
       <div class="container">
         <nav class="menu">
           <a class="logo" href="#">
-            <img src="images/logo.svg" alt="логотип">
+            <div class="logo-size" style="background-image: url('images/logo.svg')"></div>
           </a>
           <ul class="menu__list">
             <li class="menu__item">
@@ -203,7 +203,8 @@
             </h4>
             <blockquote class="feedback__blockquote">
               <p>
-                Фантастично! Я цілком задоволений роботою цього спеціаліста. Швидко і якісно. Рекомендую!
+                Фантастично! Я цілком задоволений роботою цього спеціаліста. Швидко і якісно.
+                Рекомендую!
               </p>
             </blockquote>
           </div>
@@ -236,28 +237,48 @@
       </ul>
     </section>
 
-    <section class="contacts">
+    <section class="connection">
       <div class="container">
         <h2 class="title">
           Контакти
         </h2>
-        <div class="contacts__data">
-          <div class="contacts__info">
+        <div class="connection__data">
+          <div class="connection__info">
             <p>
-              Вийти зі мною на зв’язок можна, скориставшись контактною формою, або напряму за номером телефона, email, у
+              Вийти зі мною на зв’язок можна, скориставшись контактною формою, або напряму за номером
+              телефона, email, у
               соцмережах:
             </p>
             <a href="tel:+380501111111">+38 (050) 111 11 11</a>
             <a href="mailto:frontend-monster@email.com">frontend-monster@email.com</a>
+            <div class="connection__icons">
+              <a href="https://www.instagram.com/">
+                <img src="images/socials/instagram.svg" alt="instagram">
+              </a>
+              <a href="https://www.facebook.com/">
+                <img src="images/socials/facebook.svg" alt="facebook">
+              </a>
+              <a href="https://telegram.org/">
+                <img src="images/socials/telegram.svg" alt="telegram">
+              </a>
+            </div>
           </div>
-          <form action="" class="form">
-            <label>Ваше ім’я</label>
-            <input type="text" placeholder="Іван">
-            <label>Номер телефона</label>
-            <input type="text" placeholder="+380501111111">
-            <label>Ваше повідомлення</label>
-            <textarea placeholder="Текст вашого повідомлення"></textarea>
-            <button class="btn-primary" type="submit">Надіслати</button>
+          <form action="">
+            <fieldset class="inputs">
+              <div>
+                <label for="name">Ваше ім’я</label>
+                <input type="text" id="name" placeholder="Іван">
+              </div>
+              <div>
+                <label for="phone">Номер телефона</label>
+                <input type="text" id="phone" placeholder="+380501111111">
+              </div>
+              <div>
+                <label for="message">Ваше повідомлення</label>
+                <textarea id="message" placeholder="Текст вашого повідомлення"></textarea>
+              </div>
+            </fieldset>
+            <button class="btn-primary" type="button">Надіслати</button>
           </form>
         </div>
       </div>
@@ -266,14 +287,14 @@
 
   <footer class="footer">
     <a class="logo" href="#">
-      <img src="images/logo.svg" alt="логотип">
+      <div class="logo-size" style="background-image: url('images/logo.svg')"></div>
     </a>
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
-          integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/mixitup.min.js"></script>
   <script src="js/script.js"></script>
 </body>
