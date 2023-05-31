@@ -361,12 +361,12 @@ body {
   margin-bottom: 60px;
 }
 
-.portfolio__li {
+.portfolio__buttons li {
   display: inline;
 }
 
 
-.portfolio__li:not(:last-child) {
+.portfolio__buttons li:not(:last-child) {
   margin-right: 45px;
 }
 
@@ -405,6 +405,32 @@ body {
 .portfolio__item {
   max-width: 360px;
   max-height: 360px;
+  position: relative;
+}
+
+.portfolio__item-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-weight: 600;
+  line-height: 14px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #4c4a4a;
+  border: 12px solid #666565;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.portfolio__item:hover .portfolio__item-link {
+  opacity: 1;
 }
 
 .feedback__content {
