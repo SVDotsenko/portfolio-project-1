@@ -35,7 +35,6 @@ li,
 figure,
 figcaption,
 blockquote,
-fieldset,
 dl,
 dd {
   margin: 0;
@@ -57,7 +56,7 @@ select {
   font: inherit;
 }
 
-button, fieldset {
+button {
   background-color: transparent;
   padding: 0;
   border: none;
@@ -272,13 +271,12 @@ body {
 }
 
 .expertise__picture {
-  max-width: 415px;
-  max-height: 450px;
-  margin-right: 90px;
+  width: 415px;
+  height: 450px;
 }
 
 .expertise__info {
-  width: 100%;
+  width: 664px;
 }
 
 .expertise__item {
@@ -403,9 +401,12 @@ body {
 }
 
 .portfolio__item {
-  max-width: 360px;
-  max-height: 360px;
   position: relative;
+}
+
+.portfolio__item div {
+  width: 360px;
+  height: 360px;
 }
 
 .portfolio__item-link {

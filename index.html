@@ -92,7 +92,7 @@
       <div class="container">
         <h2 class="title"> Навички </h2>
         <div class="expertise__inner">
-          <img class="expertise__picture" alt="розробник Сергій Сірко" src="images/developer.jpg">
+          <div class="expertise__picture" style="background-image: url('images/developer.jpg')"></div>
           <ul class="expertise__info">
             <li class="expertise__item">
               <div class="expertise__skill">html</div>
@@ -169,27 +169,27 @@
         </ul>
         <ul class="portfolio__content">
           <li class="portfolio__item mix category-a">
-            <img src="images/portfolio/1.jpg" alt="проект море">
+            <div style="background-image: url('images/portfolio/1.jpg')"></div>
             <a class="portfolio__item-link" href="#">show project</a>
           </li>
           <li class="portfolio__item mix category-a">
-            <img src="images/portfolio/2.jpg" alt="проект кораблі">
+            <div style="background-image: url('images/portfolio/2.jpg')"></div>
             <a class="portfolio__item-link" href="#">show project</a>
           </li>
           <li class="portfolio__item mix category-b">
-            <img src="images/portfolio/3.jpg" alt="проект мост">
+            <div style="background-image: url('images/portfolio/3.jpg')"></div>
             <a class="portfolio__item-link" href="#">show project</a>
           </li>
           <li class="portfolio__item mix category-b">
-            <img src="images/portfolio/4.jpg" alt="проект місто">
+            <div style="background-image: url('images/portfolio/4.jpg')"></div>
             <a class="portfolio__item-link" href="#">show project</a>
           </li>
           <li class="portfolio__item mix category-c">
-            <img src="images/portfolio/5.jpg" alt="проект річка">
+            <div style="background-image: url('images/portfolio/5.jpg')"></div>
             <a class="portfolio__item-link" href="#">show project</a>
           </li>
           <li class="portfolio__item mix category-c">
-            <img src="images/portfolio/6.jpg" alt="проект скала">
+            <div style="background-image: url('images/portfolio/6.jpg')"></div>
             <a class="portfolio__item-link" href="#">show project</a>
           </li>
         </ul>
@@ -215,8 +215,7 @@
             </blockquote>
           </div>
           <a data-fancybox href="https://youtu.be/xanvzIQUzgQ">
-            <div class="feedback__video" style="background-image: url('images/video-bg.jpg')">
-            </div>
+            <div class="feedback__video" style="background-image: url('images/video-bg.jpg')"></div>
           </a>
         </div>
       </div>
@@ -270,21 +269,21 @@
             </div>
           </div>
           <form action="">
-            <fieldset class="inputs">
-              <div>
+            <ul class="inputs">
+              <li>
                 <label for="name">Ваше ім’я</label>
-                <input type="text" id="name" placeholder="Іван">
-              </div>
-              <div>
+                <input type="text" id="name" name="name" placeholder="Іван" required>
+              </li>
+              <li>
                 <label for="phone">Номер телефона</label>
-                <input type="text" id="phone" placeholder="+380501111111">
-              </div>
-              <div>
+                <input type="tel" id="phone" name="phone" placeholder="+380501111111" required>
+              </li>
+              <li>
                 <label for="message">Ваше повідомлення</label>
-                <textarea id="message" placeholder="Текст вашого повідомлення"></textarea>
-              </div>
-            </fieldset>
-            <button class="btn-primary" type="button">Надіслати</button>
+                <textarea id="message" name="message" placeholder="Текст вашого повідомлення" required></textarea>
+              </li>
+            </ul>
+            <button class="btn-primary" type="submit">Надіслати</button>
           </form>
         </div>
       </div>
