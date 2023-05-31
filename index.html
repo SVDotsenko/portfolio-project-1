@@ -269,20 +269,20 @@
             </div>
           </div>
           <form action="">
-            <ul class="inputs">
-              <li>
-                <label for="name">Ваше ім’я</label>
-                <input type="text" id="name" name="name" placeholder="Іван" required>
-              </li>
-              <li>
-                <label for="phone">Номер телефона</label>
-                <input type="tel" id="phone" name="phone" placeholder="+380501111111" required>
-              </li>
-              <li>
-                <label for="message">Ваше повідомлення</label>
-                <textarea id="message" name="message" placeholder="Текст вашого повідомлення" required></textarea>
-              </li>
-            </ul>
+            <fieldset class="inputs">
+              <label>
+                Ваше ім’я
+                <input type="text" name="name" placeholder="Іван" required>
+              </label>
+              <label>
+                Номер телефона
+                <input type="tel" name="phone" placeholder="+380501111111" required>
+              </label>
+              <label>
+                Ваше повідомлення
+                <textarea name="message" placeholder="Текст вашого повідомлення" required></textarea>
+              </label>
+            </fieldset>
             <button class="btn-primary" type="submit">Надіслати</button>
           </form>
         </div>
