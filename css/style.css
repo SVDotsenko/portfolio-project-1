@@ -254,7 +254,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 23px;
+  bottom: 33px;
   padding-bottom: 29px;
 }
 
@@ -534,7 +534,7 @@ body {
   max-width: 280px;
   flex-grow: 1;
   border: 1px solid var(--border-color);
-  padding: 50px 0;
+  padding: 40px 0;
   background-repeat: no-repeat;
   background-size: cover;
   /*height: 80px;
@@ -604,7 +604,7 @@ body {
 }
 
 .connection__contacts-item:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .connection__link {
@@ -652,7 +652,7 @@ body {
 .form__inputs {
   display: flex;
   flex-wrap: nowrap;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .form__label {
@@ -677,7 +677,7 @@ body {
   min-height: 115px;
   resize: vertical;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .form__input, .form__textarea {
