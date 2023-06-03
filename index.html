@@ -3,15 +3,14 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Портфолио Сергія Сірка</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
-    integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -21,7 +20,7 @@
       <div class="container">
         <nav class="menu">
           <a class="logo" href="#">
-            <div class="logo-size" style="background-image: url('images/logo.svg')"></div>
+            <img src="images/logo.svg" alt="логотип">
           </a>
           <ul class="menu__list">
             <li class="menu__item">
@@ -50,10 +49,10 @@
       <div class="header__content-inner">
         <h1 class="header__title">
           Вітаю, я Сергій Сірко
-          <h4 class="header__subtitle">
-            frontend-розробник
-          </h4>
         </h1>
+        <span class="header__subtitle">
+            frontend-розробник
+        </span>
         <a class="header__text animation" href="#">
           дивитися роботи
         </a>
@@ -92,24 +91,30 @@
       <div class="container">
         <h2 class="title"> Навички </h2>
         <div class="expertise__inner">
-          <div class="expertise__picture" style="background-image: url('images/developer.jpg')"></div>
+          <img class="expertise__picture" alt="розробник Сергій Сірко" src="images/developer.jpg">
           <ul class="expertise__info">
             <li class="expertise__item">
               <div class="expertise__skill">html</div>
               <div class="expertise__blank">
-                <div class="expertise__full" style="width: 85%"></div>
+                <div class="expertise__full" style="width: 85%">
+                  <span class="sr-only">85%</span>
+                </div>
               </div>
             </li>
             <li class="expertise__item">
               <div class="expertise__skill">css</div>
               <div class="expertise__blank">
-                <div class="expertise__full" style="width: 80%"></div>
+                <div class="expertise__full" style="width: 80%">
+                  <span class="sr-only">80%</span>
+                </div>
               </div>
             </li>
             <li class="expertise__item">
               <div class="expertise__skill">js</div>
               <div class="expertise__blank">
-                <div class="expertise__full" style="width: 60%"></div>
+                <div class="expertise__full" style="width: 60%">
+                  <span class="sr-only">60%</span>
+                </div>
               </div>
             </li>
           </ul>
@@ -169,27 +174,27 @@
         </ul>
         <ul class="portfolio__content">
           <li class="portfolio__item mix category-a">
-            <div style="background-image: url('images/portfolio/1.jpg')"></div>
+            <img src="images/portfolio/1.jpg" alt="проект море">
             <a class="portfolio__item-link" href="#">show project</a>
           </li>
           <li class="portfolio__item mix category-a">
-            <div style="background-image: url('images/portfolio/2.jpg')"></div>
+            <img src="images/portfolio/2.jpg" alt="проект кораблі">
             <a class="portfolio__item-link" href="#">show project</a>
           </li>
           <li class="portfolio__item mix category-b">
-            <div style="background-image: url('images/portfolio/3.jpg')"></div>
+            <img src="images/portfolio/3.jpg" alt="проект мост">
             <a class="portfolio__item-link" href="#">show project</a>
           </li>
           <li class="portfolio__item mix category-b">
-            <div style="background-image: url('images/portfolio/4.jpg')"></div>
+            <img src="images/portfolio/4.jpg" alt="проект місто">
             <a class="portfolio__item-link" href="#">show project</a>
           </li>
           <li class="portfolio__item mix category-c">
-            <div style="background-image: url('images/portfolio/5.jpg')"></div>
+            <img src="images/portfolio/5.jpg" alt="проект річка">
             <a class="portfolio__item-link" href="#">show project</a>
           </li>
           <li class="portfolio__item mix category-c">
-            <div style="background-image: url('images/portfolio/6.jpg')"></div>
+            <img src="images/portfolio/6.jpg" alt="проект скала">
             <a class="portfolio__item-link" href="#">show project</a>
           </li>
         </ul>
@@ -199,90 +204,105 @@
 
     <section class="feedback section bg-color">
       <div class="container">
-        <div class="header-center">
-          <h2 class="title"> Відгуки клієнтів </h2>
-        </div>
+        <h2 class="title"> Відгуки клієнтів </h2>
         <div class="feedback__content">
-          <div class="feedback__customer">
-            <h4 class="feedback__name">
+          <figure class="feedback__customer">
+            <img class="feedback__customer-img" src="images/customer.jpg" alt="фото клієнта">
+            <figcaption class="feedback__name">
               Марк Цукерберг
-            </h4>
+            </figcaption>
             <blockquote class="feedback__blockquote">
               <p>
                 Фантастично! Я цілком задоволений роботою цього спеціаліста. Швидко і якісно.
                 Рекомендую!
               </p>
             </blockquote>
-          </div>
-          <a data-fancybox href="https://youtu.be/xanvzIQUzgQ">
-            <div class="feedback__video" style="background-image: url('images/video-bg.jpg')"></div>
+          </figure>
+          <a class="feedback__video" data-fancybox href="https://youtu.be/xanvzIQUzgQ"
+            style="background-image: url('images/video-bg.jpg')">
           </a>
         </div>
       </div>
     </section>
 
     <section class="section">
+      <h2 class="sr-only"> Досягнення </h2>
       <ul class="container statistics">
         <li class="statistics__square statistics__square--works bg-color">
-          <p class="statistics__text">Виконаних робіт</p>
-          <h4 class="statistics__number">56</h4>
+          <span>Виконаних робіт</span>
+          <span class="statistics__number">56</span>
         </li>
         <li class="statistics__square statistics__square--clients bg-color">
-          <p class="statistics__text">Задоволених клієнтів</p>
-          <h4 class="statistics__number">23</h4>
+          <span>Задоволених клієнтів</span>
+          <span class="statistics__number">23</span>
         </li>
         <li class="statistics__square statistics__square--drinks bg-color">
-          <p class="statistics__text">Випито горнят кави</p>
-          <h4 class="statistics__number">477</h4>
+          <span>Випито горнят кави</span>
+          <span class="statistics__number">477</span>
         </li>
         <li class="statistics__square statistics__square--reviews bg-color">
-          <p class="statistics__text">Усього відгуків</p>
-          <h4 class="statistics__number">48</h4>
+          <span>Усього відгуків</span>
+          <span class="statistics__number">48</span>
         </li>
       </ul>
     </section>
 
     <section class="connection">
       <div class="container">
-        <h2 class="title">
-          Контакти
-        </h2>
+        <h2 class="title"> Контакти </h2>
         <div class="connection__data">
-          <div class="connection__info">
+          <address class="connection__info">
             <p>
               Вийти зі мною на зв’язок можна, скориставшись контактною формою, або напряму за номером
               телефона, email, у
               соцмережах:
             </p>
-            <a href="tel:+380501111111">+38 (050) 111 11 11</a>
-            <a href="mailto:frontend-monster@email.com">frontend-monster@email.com</a>
-            <div class="connection__icons">
-              <a href="https://www.instagram.com/">
-                <img src="images/socials/instagram.svg" alt="instagram">
-              </a>
-              <a href="https://www.facebook.com/">
-                <img src="images/socials/facebook.svg" alt="facebook">
-              </a>
-              <a href="https://telegram.org/">
-                <img src="images/socials/telegram.svg" alt="telegram">
-              </a>
-            </div>
-          </div>
-          <form action="">
-            <fieldset class="inputs">
-              <label>
+            <ul class="connection__contacts">
+              <li class="connection__contacts-item">
+                <a class="animation connection__link" href="tel:+380501111111">+38 (050) 111 11 11</a>
+              </li>
+              <li class="connection__contacts-item">
+                <a class="animation connection__link"
+                  href="mailto:frontend-monster@email.com">frontend-monster@email.com</a>
+              </li>
+            </ul>
+            <ul class="connection__icons">
+              <li>
+                <a class="connection__icon" href="https://www.instagram.com/" target="_blank"
+                  style="background-image: url('images/socials/instagram.svg')">
+                  <span class="sr-only">instagram</span>
+                </a>
+              </li>
+              <li>
+                <a class="connection__icon" href="https://www.facebook.com/" target="_blank"
+                  style="background-image: url('images/socials/facebook.svg')">
+                  <span class="sr-only">facebook</span>
+                </a>
+              </li>
+              <li>
+                <a class="connection__icon" href="https://telegram.org/" target="_blank"
+                  style="background-image: url('images/socials/telegram.svg')">
+                  <span class="sr-only">telegram</span>
+                </a>
+              </li>
+            </ul>
+          </address>
+          <form class="form">
+            <fieldset class="form__inputs">
+              <label class="form__label">
                 Ваше ім’я
-                <input type="text" name="name" placeholder="Іван" required>
+                <input class="form__input" type="text" name="name" placeholder="Іван" required>
               </label>
-              <label>
+              <label class="form__label">
                 Номер телефона
-                <input type="tel" name="phone" placeholder="+380501111111" required>
-              </label>
-              <label>
-                Ваше повідомлення
-                <textarea name="message" placeholder="Текст вашого повідомлення" required></textarea>
+                <input class="form__input" type="tel" name="phone" placeholder="+380501111111" required>
               </label>
             </fieldset>
+            <label class="form__label">
+              Ваше повідомлення
+              <textarea class="form__textarea" name="message" placeholder="Текст вашого повідомлення"
+                required></textarea>
+            </label>
             <button class="btn-primary" type="submit">Надіслати</button>
           </form>
         </div>
@@ -292,14 +312,12 @@
 
   <footer class="footer">
     <a class="logo" href="#">
-      <div class="logo-size" style="background-image: url('images/logo.svg')"></div>
+      <img src="images/logo.svg" alt="логотип">
     </a>
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
-    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/mixitup.min.js"></script>
   <script src="js/script.js"></script>
 </body>
