@@ -57,7 +57,8 @@ select {
   font: inherit;
 }
 
-button, fieldset {
+button,
+fieldset {
   background-color: transparent;
   padding: 0;
   border: none;
@@ -222,6 +223,50 @@ body {
 
 .menu__btn {
   display: none;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 20px;
+}
+
+.menu__btn span {
+  height: 2px;
+  width: 100%;
+  transform: scale(1);
+  background-color: #fff;
+}
+
+.menu__btn::before,
+.menu__btn::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.menu__btn::before {
+  top: 0
+}
+
+.menu__btn::after {
+  bottom: 0
+}
+
+.menu__btn.active span {
+  transform: scale(0)
+}
+
+.menu__btn.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.menu__btn.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
 }
 
 .menu__list {
@@ -685,20 +730,23 @@ body {
   margin-bottom: 20px;
 }
 
-.form__input, .form__textarea {
+.form__input,
+.form__textarea {
   border: none;
   background-color: var(--bg-color);
   padding: 13px;
 }
 
-.form__input::placeholder, .form__textarea::placeholder {
+.form__input::placeholder,
+.form__textarea::placeholder {
   font-size: 14px;
   color: #9C9CAB;
   font-weight: 400;
   transition: color .3s;
 }
 
-.form__input:hover::placeholder, .form__textarea:hover::placeholder {
+.form__input:hover::placeholder,
+.form__textarea:hover::placeholder {
   color: #000;
   font-weight: 400;
 }
@@ -714,6 +762,16 @@ body {
   align-items: center;
   padding: 50px 0;
   background-color: #343740;
+}
+
+@media (max-width: 1200px) {
+  .portfolio,
+  .feedback,
+  section[class^="section"]:not([class*=" "]),
+  .connection,
+  .footer {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
@@ -744,10 +802,7 @@ body {
   }
 
   .menu__btn {
-    display: block;
-    background-color: transparent;
-    border: none;
-    padding: 0;
+    display: flex
   }
 
   .menu__list {
@@ -759,6 +814,7 @@ body {
     text-align: center;
     transform: translateY(-200%);
     transition: transform .5s;
+    animation: burgerAnimation 0.4s;
   }
 
   .menu__list.menu__list--active {
@@ -841,12 +897,14 @@ body {
     width: 40px;
     height: 40px;
   }
+}
 
-  .portfolio,
-  .feedback,
-  section[class^="section"]:not([class*=" "]),
-  .connection,
-  .footer {
-    display: none;
+@keyframes burgerAnimation {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
   }
 }
