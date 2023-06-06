@@ -587,8 +587,8 @@ body {
   padding: 40px 0;
   background-repeat: no-repeat;
   background-size: cover;
-  /*height: 80px;
-  margin-bottom: 20px; тут не работает, по этому добавил каждому*/
+  /*todo height: 80px;
+  todo margin-bottom: 20px; тут не работает, по этому добавил каждому*/
 }
 
 .statistics__square--works::before {
@@ -783,6 +783,19 @@ body {
     padding: 50px 0;
   }
 
+  .animation:hover {
+    text-decoration: none;
+  }
+
+  .animation:focus {
+    box-shadow: none;
+  }
+
+  .animation:active {
+    box-shadow: none;
+    background-color: var(--blue-color);
+  }
+
   .header__text {
     font-size: 14px;
     bottom: 20px;
@@ -823,11 +836,16 @@ body {
 
   .menu__item:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 22px;
   }
 
   .menu__item {
     font-size: 18px;
+  }
+
+  .menu__item .animation {
+    display: block;
+    padding-top: 11px;
+    padding-bottom: 11px;
   }
 
   .header__title {
