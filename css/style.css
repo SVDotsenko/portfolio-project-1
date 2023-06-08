@@ -800,7 +800,7 @@ body {
     transition: transform .5s;
   }
 
-  .menu__list.menu__list--active {
+  .menu__list.active {
     transform: translateY(0);
   }
 
