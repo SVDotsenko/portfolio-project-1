@@ -415,7 +415,7 @@ body {
 
 .portfolio {
   padding-bottom: 140px;
-  text-align: center;
+  /*text-align: center; убрал т.к. Мої роботи неправильно центрирует*/
 }
 
 .portfolio__buttons {
@@ -455,13 +455,13 @@ body {
 .portfolio__content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 0 -45px 15px 0;
+  justify-content: center;
+  gap: 45px;
+  margin-bottom: 60px;
 }
 
 .portfolio__item {
   position: relative;
-  margin: 0 45px 45px 0;
 }
 
 .portfolio__item-link {
@@ -487,6 +487,11 @@ body {
 
 .portfolio__item:hover .portfolio__item-link {
   opacity: 1;
+}
+
+.portfolio .container .btn-primary {
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .feedback {
@@ -763,6 +768,27 @@ body {
   .services__item:not(:last-child) {
     margin-right: 70px;
   }
+
+  .portfolio {
+    padding-bottom: 120px;
+  }
+
+  .portfolio__buttons li:not(:last-child) {
+    margin-right: 38px;
+  }
+
+  .portfolio__content {
+    gap: 38px;
+    margin-bottom: 50px;
+  }
+
+  .portfolio__item {
+    width: 30%;
+  }
+
+  .portfolio__buttons {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -829,6 +855,23 @@ body {
   .services__item:not(:last-child) {
     margin-right: 50px;
   }
+
+  .portfolio {
+    padding-bottom: 95px;
+  }
+
+  .portfolio__buttons li:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .portfolio__content {
+    gap: 30px;
+    margin-bottom: 45px;
+  }
+
+  .portfolio__buttons {
+    margin-bottom: 45px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -887,6 +930,33 @@ body {
   .services__item:not(:last-child) {
     margin-right: 25px;
   }
+
+  .portfolio {
+    padding-bottom: 73px;
+  }
+
+  .portfolio__buttons {
+    flex-direction: column;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+
+  .portfolio__buttons li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .portfolio__content {
+    gap: 23px;
+    margin-bottom: 37px;
+  }
+
+  .portfolio__item {
+    width: 46%;
+  }
+
+  .portfolio__button {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -935,7 +1005,7 @@ body {
   }
 
   .services.section {
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
 
   .services__items {
@@ -960,5 +1030,22 @@ body {
   .services__subtitle {
     font-size: 20px;
     margin-bottom: 15px;
+  }
+
+  .portfolio {
+    padding-bottom: 50px;
+  }
+
+  .portfolio__buttons {
+    margin-bottom: 30px;
+  }
+
+  .portfolio__button {
+    font-size: 18px;
+  }
+
+  .portfolio__content {
+    gap: 15px;
+    margin-bottom: 30px;
   }
 }
