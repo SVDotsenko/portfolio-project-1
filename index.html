@@ -24,7 +24,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" style="background-image: url('images/header-bg.jpg')">
     <div class="header__top">
       <div class="container">
         <nav class="menu">
@@ -37,22 +37,22 @@
           </button>
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="animation menu__link" href="#">Про мене</a>
+              <a class="animation menu__link" href="#about">Про мене</a>
             </li>
             <li class="menu__item">
-              <a class="animation menu__link" href="#">Навички</a>
+              <a class="animation menu__link" href="#expertise">Навички</a>
             </li>
             <li class="menu__item">
-              <a class="animation menu__link" href="#">Послуги</a>
+              <a class="animation menu__link" href="#services">Послуги</a>
             </li>
             <li class="menu__item">
-              <a class="animation menu__link" href="#">Портфоліо</a>
+              <a class="animation menu__link" href="#portfolio">Портфоліо</a>
             </li>
             <li class="menu__item">
-              <a class="animation menu__link" href="#">Відгуки</a>
+              <a class="animation menu__link" href="#feedback">Відгуки</a>
             </li>
             <li class="menu__item">
-              <a class="animation menu__link" href="#">Контакти</a>
+              <a class="animation menu__link" href="#connection">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -66,7 +66,7 @@
             frontend-розробник
           </span>
         </h1>
-        <a class="header__text animation" href="#">
+        <a class="header__text animation" href="#portfolio">
           дивитися роботи
         </a>
       </div>
@@ -74,7 +74,7 @@
   </header>
 
   <main>
-    <section class="about section">
+    <section class="about section" id="about">
       <div class="container">
         <h2 class="title">
           Про мене
@@ -100,7 +100,7 @@
       </div>
     </section>
 
-    <section class="expertise section bg-color">
+    <section class="expertise section bg-color" id="expertise">
       <div class="container">
         <h2 class="title"> Навички </h2>
         <div class="expertise__inner">
@@ -135,7 +135,7 @@
       </div>
     </section>
 
-    <section class="services section">
+    <section class="services section" id="services">
       <div class="container">
         <h2 class="title">Послуги</h2>
         <ul class="services__items">
@@ -168,7 +168,7 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container">
         <h2 class="title">Мої роботи</h2>
         <ul class="portfolio__buttons">
@@ -196,34 +196,34 @@
         <ul class="portfolio__content">
           <li class="portfolio__item mix category-a">
             <img src="images/portfolio/1.jpg" alt="проект море">
-            <a class="portfolio__item-link" href="#">show project</a>
+            <a class="portfolio__item-link" href="#">дивитися проект</a>
           </li>
           <li class="portfolio__item mix category-a">
             <img src="images/portfolio/2.jpg" alt="проект кораблі">
-            <a class="portfolio__item-link" href="#">show project</a>
+            <a class="portfolio__item-link" href="#">дивитися проект</a>
           </li>
           <li class="portfolio__item mix category-b">
             <img src="images/portfolio/3.jpg" alt="проект мост">
-            <a class="portfolio__item-link" href="#">show project</a>
+            <a class="portfolio__item-link" href="#">дивитися проект</a>
           </li>
           <li class="portfolio__item mix category-b">
             <img src="images/portfolio/4.jpg" alt="проект місто">
-            <a class="portfolio__item-link" href="#">show project</a>
+            <a class="portfolio__item-link" href="#">дивитися проект</a>
           </li>
           <li class="portfolio__item mix category-c">
             <img src="images/portfolio/5.jpg" alt="проект річка">
-            <a class="portfolio__item-link" href="#">show project</a>
+            <a class="portfolio__item-link" href="#">дивитися проект</a>
           </li>
           <li class="portfolio__item mix category-c">
             <img src="images/portfolio/6.jpg" alt="проект скала">
-            <a class="portfolio__item-link" href="#">show project</a>
+            <a class="portfolio__item-link" href="#">дивитися проект</a>
           </li>
         </ul>
         <button class="btn-primary" type="button">Завантажити ще</button>
       </div>
     </section>
 
-    <section class="feedback section bg-color">
+    <section class="feedback section bg-color" id="feedback">
       <div class="container">
         <h2 class="title"> Відгуки клієнтів </h2>
         <div class="feedback__content">
@@ -269,7 +269,7 @@
       </ul>
     </section>
 
-    <section class="connection">
+    <section class="connection" id="connection">
       <div class="container">
         <h2 class="title"> Контакти </h2>
         <div class="connection__data">
@@ -338,7 +338,7 @@
     </a>
   </footer>
 
-  <script src="js/jquery3.5.1.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/mixitup.min.js"></script>
   <script src="js/script.js"></script>

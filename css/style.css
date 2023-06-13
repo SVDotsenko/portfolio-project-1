@@ -8,6 +8,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -167,13 +168,13 @@ body {
 .header {
   font-weight: 600;
   min-height: 100vh;
-  background-image: url('../images/header-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
   position: relative;
   color: var(--primary-color);
   z-index: 1;
+  padding-top: 127px;
 }
 
 .header::before {
@@ -196,6 +197,10 @@ body {
 
 .header__top {
   padding-top: 75px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .menu {
