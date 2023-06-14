@@ -1,7 +1,7 @@
 $(() => {
     $(".burger__button, .menu__link").on("click", () => {
         $('.menu__list, .burger__button').toggleClass('active');
-        $('.header__text').toggleClass('z-index-1');
+        $('.header__text, .footer .logo').toggleClass('z-index-1');
         $('body').toggleClass('lock');
     });
 
@@ -18,19 +18,8 @@ $(() => {
     }
 
     $(window).on('scroll resize', () => {
-        const screenWidth = $(window).width();
         const diff = $(".about").offset().top - $(".header__top").offset().top;
-
-        $(".menu").css('background-color', diff < 85 && screenWidth > 992 ? '#7792E0' : 'unset');
-
-        if (diff < 85) {
-            $(".menu .logo, .burger__button span, .burger__button::before, .burger__button::after")
-                .css('background-color', '#7792E0');
-        } else {
-            $(".menu .logo").css('background-color', 'unset');
-            $(".burger__button span, .burger__button::before, .burger__button::after")
-                .css('background-color', '#fff');
-        }
+        $(".menu").css('background-color', diff < 85 ? '#7792E0' : 'unset');
     });
 });
 
