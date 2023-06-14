@@ -1,6 +1,7 @@
 $(() => {
-    $(".burger__button, .menu a").on("click", () => {
+    $(".burger__button, .menu__link").on("click", () => {
         $('.menu__list, .burger__button').toggleClass('active');
+        $('.header__text').toggleClass('z-index-1');
         $('body').toggleClass('lock');
     });
 
@@ -20,7 +21,7 @@ $(() => {
         const screenWidth = $(window).width();
         const diff = $(".about").offset().top - $(".header__top").offset().top;
 
-        $(".header__top").css('color', diff < 85 && screenWidth > 992 ? '#7792E0' : 'unset');
+        $(".menu").css('background-color', diff < 85 && screenWidth > 992 ? '#7792E0' : 'unset');
 
         if (diff < 85) {
             $(".menu .logo, .burger__button span, .burger__button::before, .burger__button::after")
