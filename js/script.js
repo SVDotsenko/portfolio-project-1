@@ -19,18 +19,7 @@ $(() => {
 
     $(window).on('scroll resize', () => {
         const diff = $(".about").offset().top - $(".header__top").offset().top;
-        const menu = $(".menu");
-        menu.css('background-color', diff < 85 ? '#7792E0' : 'unset');
-        menu.css('opacity', diff < 85 ? 0.2 : '');
-        menu.hover(
-            function () {
-                if (diff < 85) {
-                    $(this).css('opacity', '');
-                }
-            },
-            function () {
-                $(this).css('opacity', 0.3);
-            });
+        $(".menu").css('background-color', diff < 85 ? '#7792E0' : 'unset');
     });
 });
 
