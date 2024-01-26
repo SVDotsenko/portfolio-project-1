@@ -1,7 +1,7 @@
 $(() => {
     $(".burger__button, .menu__link").on("click", () => {
         $('.menu__list, .burger__button').toggleClass('active');
-        $('.header__text, .footer .logo').toggleClass('z-index-1');
+        $('.header__text').toggleClass('z-index-1');
         $('body').toggleClass('lock');
     });
 
