@@ -1,110 +1,100 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Serhii's Sirko portfolio
 
-Welcome USER_NAME,
+This website is a portfolio project for Serhii Sirko, a front-end developer. It showcases Serhii's skills in web development and design, including JavaScript, CSS, and HTML.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This website is for anyone who is interested in learning more about Serhii's work as a front-end developer. It provides a glimpse into his skills, experience, and portfolio, contact information.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![Responsive Mockup](images/readme/mockups.png)
 
-## Gitpod Reminders
+## Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+This site is designed as single page application, which consist of the following parts:
 
-`python3 -m http.server`
+### Existing Features
 
-A blue button should appear to click: _Make Public_,
+- __Navigation Bar__
 
-Another blue button should appear to click: _Open Browser_.
+    - The full responsive navigation bar includes links to the Logo (Home page), About me, Skills, Services, Portfolio, Reviews and Contacts section and is identical in each section to allow for easy navigation.
+    - This section will allow the user to easily navigate from section to section across all devices without having to revert back to the previous page via the ‘back’ button.
+     ![Nav Bar](images/readme/menu.png)
+    - It will Collapse on smaller screen sizes to make it more manageable and visually pleasing
+  
+      ![Nav Bar](images/readme/menu-burger.png)
+  
+      ![Nav Bar](images/readme/menu-mobile.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+- __The landing page image__
 
-Another blue button should appear to click: _Open Browser_.
+    - The landing includes a photograph with text overlay to allow the user to see exactly what is this site about.
+    - This section introduces the user to Serhii Sirko with attention to his portfolio.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Landing Page](images/readme/start.png)
 
-To log into the Heroku toolbelt CLI:
+- __About me Section__
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    - This section gives brief introduction about Serhii.
+  
+![About me section](images/readme/aboutme.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- __Skills section__
 
-------
+    - This section will allow the user to see Serhii's main skills.
+  
+![Skills section](images/readme/skills.png)
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 20 2023:** Update Python version to 3.9.17.
+### Features Left to Implement
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- Lazy loading on load more button
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Testing
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+This section demonstrates my comprehensive manual testing efforts undertaken to validate the functionality and user experience of my website. Through rigorous testing, I aimed to verify that all features operate as intended, offering a smooth and intuitive journey for users across diverse browsers and screen sizes.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+**Testing Methodology:**
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* **Feature Exploration:** I meticulously explored each website feature, simulating real user interactions and scenarios. This covered core functionalities like [list key features].
+* **Positive & Negative Testing:** I devised and executed test cases encompassing both positive scenarios – confirming expected behavior – and negative scenarios – actively triggering potential errors and edge cases.
+* **Cross-Browser Compatibility:** I rigorously tested the website across major browsers (e.g., Chrome, Firefox, Safari) and various screen sizes (desktop, mobile) to ensure optimal performance and visual consistency.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+**Key Findings:**
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* **Functionality:** All tested features performed flawlessly, enabling users to achieve their goals (e.g., [mention specific user goals achieved]).
+* **User Experience:** Interactions were intuitive and responsive, fostering a seamless experience across devices and screen sizes.
+* **Visual Consistency:** The website maintained consistent layouts and aesthetics across browsers and screen sizes, preserving a polished and professional appearance.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+**Conclusion:**
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+Through meticulous manual testing, I identified and addressed any potential issues within the website. This ensures a robust and user-friendly experience for all visitors, fostering confidence in its quality and effectiveness.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Validator Testing
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- HTML
+    - No errors were returned when passing through the official W3C validator
+  
+![W3C validator](images/readme/html.png)
+- CSS
+    - No errors were found when passing through the official (Jigsaw) validator
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![W3C validator](images/readme/css.png)
+### Unfixed Bugs
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Deployment
 
-------
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+    - In the GitHub repository, navigate to the Settings tab
+    - From the source section drop-down menu, select the main branch
+    - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-## FAQ about the uptime script
+The live link can be found here - https://svdotsenko.github.io/portfolio-project-1
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Credits
 
-**How will this affect me?**
+### Content & Media 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+I implemented this [mockup](https://www.figma.com/file/h0f2OcCTHy0Nu2jKlywjbs/%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D1%96%D0%BE?type=design&node-id=0%3A1&mode=dev)
