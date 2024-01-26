@@ -11,22 +11,24 @@
   <meta name="msapplication-TileColor" content="#ffc40d">
   <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Serhii's Sirko portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+<!--  Header  -->
   <header class="header" style="background-image: url('images/header-bg.jpg')">
     <div class="header__top">
       <div class="container">
+<!--  Navigation-->
         <nav class="menu">
           <a class="logo" href="#">
             <img src="images/logo.svg" alt="логотип">
@@ -74,6 +76,7 @@
   </header>
 
   <main>
+<!--  About me    -->
     <section class="about section" id="about">
       <div class="container">
         <h2 class="title">
@@ -98,6 +101,7 @@
       </div>
     </section>
 
+<!--  Skills    -->
     <section class="expertise section bg-color" id="expertise">
       <div class="container">
         <h2 class="title"> Skills </h2>
@@ -133,6 +137,7 @@
       </div>
     </section>
 
+<!--  Services    -->
     <section class="services section" id="services">
       <div class="container">
         <h2 class="title">Services</h2>
@@ -167,6 +172,7 @@
       </div>
     </section>
 
+<!--  Portfolio    -->
     <section class="portfolio" id="portfolio">
       <div class="container">
         <h2 class="title">Portfolio</h2>
@@ -222,22 +228,21 @@
       </div>
     </section>
 
+<!--  Customer reviews    -->
     <section class="feedback section bg-color" id="feedback">
       <div class="container">
         <h2 class="title"> Customer reviews </h2>
         <div class="feedback__content">
-          <figure class="feedback__customer">
+          <div class="feedback__customer">
             <img class="feedback__customer-img" src="images/customer.jpg" alt="фото клієнта">
-            <figcaption class="feedback__name">
+            <p class="feedback__name">
               Mark Zuckerberg
-            </figcaption>
-            <blockquote class="feedback__blockquote">
-              <p>
+            </p>
+            <p class="feedback__blockquote">
                 Fantastically! I am completely satisfied with the work of this specialist. Quickly and qualitatively.
                 I recommend!
-              </p>
-            </blockquote>
-          </figure>
+            </p>
+          </div>
           <a class="feedback__video" data-fancybox href="https://youtu.be/xanvzIQUzgQ"
             style="background-image: url('images/video-bg.jpg')">
             <span class="sr-only">video feedback</span>
@@ -246,8 +251,9 @@
       </div>
     </section>
 
+<!--  Achievements    -->
     <section class="section">
-      <h2 class="sr-only"> Achievement </h2>
+      <h2 class="sr-only"> Achievements </h2>
       <ul class="container statistics">
         <li class="statistics__square statistics__square--works bg-color">
           <span class="statistics__description">Completed works</span>
@@ -268,6 +274,7 @@
       </ul>
     </section>
 
+<!--  Contacts    -->
     <section class="connection" id="connection">
       <div class="container">
         <h2 class="title"> Контакти </h2>
