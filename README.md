@@ -43,6 +43,35 @@ This site is designed as single page application, which consist of the following
   
 ![Skills section](images/readme/skills.png)
 
+- __Services section__
+
+    - This section will allow the user to see services which Serhii can provide.
+
+![Services section](images/readme/services.png)
+
+- __Portfolio section__
+
+    - This section will allow the user to see services projects which Serhii has already done.
+
+![Portfolio section](images/readme/portfolio.png)
+
+- __Customer review section__
+
+    - This section will allow the user to see customer review.
+
+![Customer review section](images/readme/review.png)
+
+- __Statistics section__
+
+    - This section will allow the user to see statistics about Serhii's work.
+
+![Statistics section](images/readme/statistics.png)
+
+- __Contacts section__
+
+    - This section will allow the user to see how to contact with Serhii.
+
+![contacts section](images/readme/contacts.png)
 
 
 ### Features Left to Implement
