@@ -127,4 +127,4 @@ The live link can be found here - https://svdotsenko.github.io/portfolio-project
 ### Content & Media 
 
 - I implemented this [mockup](https://www.figma.com/file/h0f2OcCTHy0Nu2jKlywjbs/%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D1%96%D0%BE?type=design&node-id=0%3A1&mode=dev)
-- To transfer data from one HTML page to another I used this [approach](https://youtu.be/U5Dr5zNNl1g?si=7VelIPd_HxQgcAJD) 
+ 
