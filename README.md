@@ -97,6 +97,11 @@ devtools device toolbar.
 
 ![W3C validator](images/readme/css.png)
 
+- Accessibility  
+  - I confirm that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools. 
+
+![lighthouse](images/readme/lighthouse.png)
+
 ## Deployment
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows:
@@ -104,7 +109,7 @@ devtools device toolbar.
     - From the source section drop-down menu, select the main branch
     - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found here - https://svdotsenko.github.io/portfolio-project-1
+The live link can be found [here](https://svdotsenko.github.io/portfolio-project-1)
 
 
 ## Credits
