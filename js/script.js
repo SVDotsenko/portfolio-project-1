@@ -5,6 +5,11 @@ $(() => {
         $('body').toggleClass('lock');
     });
 
+    $(".menu > .logo").on("click", () => {
+        $('.menu__list, .burger__button').removeClass('active');
+        $('.header__text').removeClass('z-index-1');
+    });
+
     const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
     const isIE = /Trident|MSIE/.test(window.navigator.userAgent);
 

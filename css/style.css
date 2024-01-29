@@ -217,9 +217,12 @@ body {
   transition: all 0.3s;
 }
 
+.menu > .logo{
+  z-index: 2;
+}
+
 .logo {
   transition: box-shadow 0.5s, opacity 0.5s;
-  z-index: 2;
 }
 
 .logo:focus {
